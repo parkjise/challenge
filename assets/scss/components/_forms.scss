@@ -1,0 +1,41 @@
+@use "../abstracts/mixins" as mixin;
+@use "../abstracts/variables" as var;
+.form-input {
+  display: block;
+  width: calc(100% - 1.8rem);
+  padding: .5rem .9rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color:var.$color-text-primary;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var.$color-white;
+  background-clip: padding-box;
+  border:1px solid var.$color-border-form;
+  border-radius:4px;
+  outline: 0;
+  &::placeholder {
+    // color: var.$color-text-light-grey;
+  }
+  &:focus{
+    border: 1px solid var.$color-text-primary;
+  }
+  &:disabled{
+    border: 1px solid var.$color-border-form;
+    // background-color: var.$color-grey-disabled;
+    &::placeholder {
+      // color: rgba(var.$color-text-light-grey,.4);
+    }
+  }
+}
+
+@include mixin.mobile {
+  .form-input {
+    font-size: 1.4rem;
+    &::placeholder {
+      font-size: 1.4rem;
+    }
+  }
+}

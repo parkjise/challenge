@@ -1,0 +1,22 @@
+
+// base
+@use "base/reset";
+@use "base/animation";
+@use "base/base";
+@use "base/typography";
+@use "base/utilities";
+@use "base/fonts";
+// components
+@use "components/button";
+@use "components/forms";
+// layout
+@use "layout/common";
+@use "layout/header";
+// pages
+@use  'pages/main';
+// plugins
+@use "plugins/icons/remixicon";
+
+
+
+

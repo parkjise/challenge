@@ -1,0 +1,163 @@
+@use '../abstracts/mixins' as main;
+@use '../abstracts/variables' as var;
+.main_visual{
+  background-color: var.$color-white;
+  background-image: url(../images/main_img.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 1rem center;
+  & .visual_txt{
+    padding: 5rem 2rem;
+    &_01{
+      color: var.$color-text-primary;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 24px;
+    } 
+    &_02{
+      color: var.$color-primary;
+      font-size: 4rem;
+      font-weight: 800;
+      padding-top: 1rem;
+    } 
+  }
+  & .challenge_participation{
+      padding: 0 2rem 3rem 2rem;
+      & .btn_wrap {
+        @include main.flex(true,start,center,.5rem);
+        & a{
+          display:block;
+        }
+      }
+  }
+}
+.challenge_situation,.challenge_ranking{
+  background-color: var.$color-white;
+  margin-top: 1rem;
+  padding: 3rem 2rem;
+}
+
+.situation_box_wrap{
+  @include main.flex(true,start,center,2rem);
+  & .situation_box{
+    text-align: center;
+    border-radius: 1rem;
+    padding:2rem 1.5rem;
+    flex: 1;
+    & .situation_box_tit{
+      font-weight: 600;
+      font-size: 1.6rem;
+      padding: 1rem 0;
+    }
+    & .situation_price{
+      font-weight: 600;
+      font-size: 2.4rem;
+      & span{
+        font-size: 1.4rem;
+        padding-left: .5rem;
+      }
+    }
+    &.blue{
+      background-color:#F1F7FB ;
+      & .situation_box_tit{
+        color: #63717A;
+      }
+    }
+    &.pink{
+      background-color:#FDF8FA ;
+      & .situation_box_tit{
+        color: #7D636D;
+      }
+    }
+  }
+}
+.ranking_box_wrap{
+  & > div{
+    margin-top: 1rem;
+  }
+}
+
+.ranking_box_01{
+  border: 1px solid var.$color-primary;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  @include main.flex(true);
+  & .ranking_box{
+    width: 100%;
+    margin-left: 10px;
+    @include main.flex(true,space-between,center);
+    & .ranking_num{
+      @include main.flex(false,start,start);
+      & .ranking_num_01{
+        font-size: 1.6rem;
+        font-weight: 600;
+        color:var.$color-primary;
+      }
+      & .ranking_num_02{
+        font-size: 2rem;
+        font-weight: 600;
+        color:var.$color-text-primary;
+        span{
+          font-size: 1.4rem;
+          color: #646464;
+        }
+      }
+    }
+    & .participant_wrap{
+      text-align: right;
+      & .participant{
+        & + .participant{
+          padding-top: 1rem;;
+        }
+      }
+      & .participant_txt_01{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color:var.$color-text-gray;
+      }
+      & .participant_txt_02{
+        font-size: 1.8rem;
+        font-weight: 600;
+        color:var.$color-text-primary;
+        padding: 0 .5rem;
+      }
+      & .participant_txt_03{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color:var.$color-text-primary;
+      }
+    }
+  }
+}  
+
+.ranking_box_02{
+  border-radius: 1rem;
+  border: 1px solid var.$color-btn-outline;
+  padding: 2rem 1rem;
+}
+
+.ranking_content{
+  @include main.flex(true,space-between,start);
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  &_01{
+    color:var.$color-primary;
+  }
+  & span{
+    & > span{
+      font-size: 1.4rem;
+      color: #646464;
+    }
+  }
+  &_04{
+    width: 13rem;
+    text-align: right;
+  }
+}
+
+.challenge_tit{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}

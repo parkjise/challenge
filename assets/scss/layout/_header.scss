@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+
+.header{
+  @include mixin.flex(true,space-between,center);
+  height: 60px;
+  padding: 0 2rem;
+  background-color: var.$color-white;
+}
+.gnb{
+  @include mixin.flex(true,start,center,1rem);
+  & i{
+    font-size: 2.4rem;
+  }
+  & .menu{
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var.$color-white;
+    & .close{
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      & i{
+        font-size: 3.6rem;
+      }
+    }
+    & .nav {
+      padding: 8rem 2rem 2rem 2rem;
+      & li{
+        & a{
+          font-weight: 500;
+          display: block;
+          font-size: 1.6rem;
+          padding: 2rem;
+          border-bottom: 1px solid var.$color-btn-outline;
+        }
+      }
+    } 
+  }
+}
