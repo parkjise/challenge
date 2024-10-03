@@ -113,6 +113,7 @@ input[type=date]:valid::before {
 html {
   font-size: 10px;
   font-family: "Pretendard", sans-serif;
+  color: #2B2B2B;
 }
 
 .fullwidth {
@@ -319,16 +320,29 @@ a {
 .btn-large {
   padding: 1.2rem 2.5rem;
 }
-
-@media (max-width: 1000px) {
-  .h-btn {
-    font-size: 1.2rem;
-  }
+.btn-full {
+  width: 100%;
+  height: 5rem;
+  color: #fff;
+  border-radius: 0;
 }
+.btn-full.disabled {
+  background-color: #9DA5AB;
+}
+.btn-half {
+  width: 50%;
+  height: 5rem;
+  color: #fff;
+  border-radius: 0;
+}
+.btn-half.disabled {
+  background-color: #9DA5AB;
+}
+
 .form-input {
   display: block;
   width: calc(100% - 1.8rem);
-  padding: 0.5rem 0.9rem;
+  padding: 1rem 0.9rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -342,12 +356,45 @@ a {
   border-radius: 4px;
   outline: 0;
 }
+.form-input::placeholder {
+  color: #9DA5AB;
+  font-size: 1.6rem;
+}
 .form-input:focus {
   border: 1px solid #2B2B2B;
 }
 .form-input:disabled {
   border: 1px solid #D5DAE0;
 }
+.participation_form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.participation_form label {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #2B2B2B;
+}
+.participation_form label > i {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #7D0005;
+}
+.participation_form .form_num {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 1rem;
+  top: 4.2rem;
+  color: #9DA5AB;
+}
+.participation_form + .participation_form {
+  margin-top: 4rem;
+}
+
 @media (max-width: 1000px) {
   .form-input {
     font-size: 1.4rem;
@@ -360,12 +407,100 @@ a {
   background-color: #f8f8f8;
 }
 
-.footer {
+.contents {
+  margin-top: 1rem;
+  height: calc(100vh - 12rem);
   background-color: #fff;
+  padding: 0 2rem;
+}
+.contents h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 3rem 0;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 6rem;
+  margin-bottom: 3rem;
+}
+.step .circel {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #D5DAE0;
+  color: #fff;
+}
+.step .circel.active {
+  background-color: #2B2B2B;
+}
+.step .line {
+  flex: 1;
+  height: 0.1rem;
+  background-color: #EFEFEF;
+}
+
+.bottom_btn {
+  width: 100%;
+}
+
+footer {
+  background-color: #fff;
+}
+footer .footer {
   padding: 2rem;
   margin-top: 1rem;
   color: #9DA5AB;
   font-size: 1.2rem;
+}
+
+.dimmed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  position: relative;
+  background-color: #fff;
+  width: 90%;
+  height: 20rem;
+  border-radius: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.modal .modal_content {
+  text-align: center;
+  padding: 4rem 2rem 0rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 24px;
+}
+.modal .modal_content .point {
+  font-weight: 700;
+}
+.modal .modal_btn {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.modal .modal_btn button {
+  flex: 1;
 }
 
 @media (min-width: 1200px) {
@@ -430,7 +565,7 @@ a {
   font-weight: 500;
   display: block;
   font-size: 1.6rem;
-  padding: 2rem;
+  padding: 3rem 2rem;
   border-bottom: 1px solid #E4E4E4;
 }
 

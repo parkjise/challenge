@@ -1,7 +1,9 @@
+@use "../abstracts/variables" as var;
 :lang(ko){font-family: 'Pretendard', sans-serif;}
 html {
   font-size: 10px;
   font-family: 'Pretendard', sans-serif;
+  color: var.$color-text-primary;
 }
 
 @media(max-width:1200px){
