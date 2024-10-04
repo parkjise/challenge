@@ -574,7 +574,7 @@ footer .footer {
   background-image: url(../images/main_img.png);
   background-repeat: no-repeat;
   background-size: 250px 194px;
-  background-position: 1rem center;
+  background-position: right -3rem center;
 }
 .main_visual .visual_txt {
   padding: 5rem 2rem;
