@@ -2,9 +2,9 @@
 @use '../abstracts/variables' as var;
 .main_visual{
   background-color: var.$color-white;
-  background-image: url(../images/main_img.svg);
+  background-image: url(../images/main_img.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 250px 194px;
   background-position: 1rem center;
   & .visual_txt{
     padding: 5rem 2rem;
