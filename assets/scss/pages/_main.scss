@@ -1,12 +1,17 @@
 @use '../abstracts/mixins' as main;
 @use '../abstracts/variables' as var;
+.main_content{
+  height:calc(100vh - 6rem);
+  background-color:var.$color-white;
+  overflow-y: scroll;
+}
 .main_visual{
   background-color: var.$color-white;
   background-image: url(../images/main_img.png);
   background-repeat: no-repeat;
   background-size: 250px 194px;
   object-fit: cover;
-  background-position: right -3rem center;
+  background-position: right -4.5rem center;
   & .visual_txt{
     padding: 5rem 2rem;
     &_01{
