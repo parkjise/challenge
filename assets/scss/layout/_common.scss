@@ -6,9 +6,9 @@
 }
 .contents{
   margin-top: 1rem;
-  // height:calc(100vh - 12rem);
+  height:calc(100vh - 12rem);
   background-color:var.$color-white;
-  padding: 0 2rem;
+  padding: 0 2rem 3rem 2rem;
   & h2{
     font-weight: 700;
     font-size: 2rem;

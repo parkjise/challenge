@@ -413,8 +413,9 @@ a {
 
 .contents {
   margin-top: 1rem;
+  height: calc(100vh - 12rem);
   background-color: #fff;
-  padding: 0 2rem;
+  padding: 0 2rem 3rem 2rem;
 }
 .contents h2 {
   font-weight: 700;
@@ -758,6 +759,7 @@ footer .footer {
 
 .select_text {
   font-size: 1.8rem;
+  font-weight: 600;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -778,7 +780,7 @@ footer .footer {
   align-items: center;
   gap: 0;
   padding: 2rem 1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   border-radius: 1rem;
   border: 1px solid #E4E4E4;
@@ -806,7 +808,7 @@ footer .footer {
   text-align: left;
 }
 .select_box .select_phone {
-  width: 30%;
+  width: 40%;
   text-align: right;
 }
 

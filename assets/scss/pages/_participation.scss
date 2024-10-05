@@ -4,6 +4,7 @@
 
 .select_text{
   font-size: 1.8rem;
+  font-weight: 600;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -14,7 +15,7 @@
   width: calc(100% - 2rem);
   @include mixin.flex(true,space-between,center);
   padding: 2rem 1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   border-radius: 1rem;
   border: 1px solid #E4E4E4;
@@ -45,7 +46,7 @@
     text-align: left;
   }
   & .select_phone{
-    width: 30%;
+    width: 40%;
     text-align: right;
   }
 }
