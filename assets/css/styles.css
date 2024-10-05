@@ -118,6 +118,7 @@ html {
   font-size: 10px;
   font-family: "Pretendard", sans-serif;
   color: #2B2B2B;
+  height: 100%;
 }
 
 .fullwidth {
@@ -409,13 +410,15 @@ a {
 }
 .wrap {
   background-color: #f8f8f8;
+  height: calc(100vh - 12rem);
 }
 
 .contents {
   margin-top: 1rem;
-  height: calc(100vh - 12rem);
+  height: calc(100vh - 14rem);
   background-color: #fff;
   padding: 0 2rem 3rem 2rem;
+  overflow-y: scroll;
 }
 .contents h2 {
   font-weight: 700;
@@ -521,11 +524,13 @@ footer .footer {
   }
   .container {
     width: 390px;
+    height: 100%;
   }
 }
 @media (max-width: 1199px) {
   .container {
     width: 100%;
+    height: 100%;
   }
 }
 .header {
@@ -581,6 +586,7 @@ footer .footer {
   background-image: url(../images/main_img.png);
   background-repeat: no-repeat;
   background-size: 250px 194px;
+  object-fit: cover;
   background-position: right -3rem center;
 }
 .main_visual .visual_txt {

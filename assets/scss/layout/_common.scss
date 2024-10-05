@@ -2,13 +2,15 @@
 @use '../abstracts/mixins' as mixin;
 
 .wrap{
-  background-color:var.$color-gray; 
+  background-color:var.$color-gray;
+  height:calc(100vh - 12rem); 
 }
 .contents{
   margin-top: 1rem;
-  height:calc(100vh - 12rem);
+  height:calc(100vh - 14rem);
   background-color:var.$color-white;
   padding: 0 2rem 3rem 2rem;
+  overflow-y: scroll;
   & h2{
     font-weight: 700;
     font-size: 2rem;
@@ -102,11 +104,13 @@ footer{
   }
   .container{
     width: 390px;
+    height: 100%;
   }
 }
 
 @media(max-width:1199px){
   .container{
     width: 100%;
+    height: 100%;
   }
 }
