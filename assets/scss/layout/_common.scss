@@ -6,7 +6,7 @@
 }
 .contents{
   margin-top: 1rem;
-  height:calc(100vh - 12rem);
+  // height:calc(100vh - 12rem);
   background-color:var.$color-white;
   padding: 0 2rem;
   & h2{
@@ -41,6 +41,9 @@
 }
 .bottom_btn{
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 footer{
   background-color:var.$color-white;

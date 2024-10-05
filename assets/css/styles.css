@@ -39,6 +39,7 @@ a:link, a:visited {
 button {
   cursor: pointer;
   background-color: transparent;
+  color: #2b2b2b;
 }
 
 /* Normalize */
@@ -409,7 +410,6 @@ a {
 
 .contents {
   margin-top: 1rem;
-  height: calc(100vh - 12rem);
   background-color: #fff;
   padding: 0 2rem;
 }
@@ -450,6 +450,9 @@ a {
 
 .bottom_btn {
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 footer {
@@ -748,6 +751,60 @@ footer .footer {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 700;
+}
+
+.select_text {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.select_form_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.select_box {
+  width: calc(100% - 2rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  padding: 2rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  border: 1px solid #E4E4E4;
+}
+.select_box .select_check {
+  width: 50px;
+  text-align: left;
+}
+.select_box .select_check i {
+  font-size: 2.4rem;
+  color: #CFCFCF;
+}
+.select_box .select_check.active i {
+  color: #7D0005;
+}
+.select_box .select_check.disabled i {
+  color: #D5D5D5;
+}
+.select_box .select_num {
+  width: 30%;
+  text-align: left;
+}
+.select_box .select_name {
+  flex: 1;
+  text-align: left;
+}
+.select_box .select_phone {
+  width: 30%;
+  text-align: right;
 }
 
 /*
