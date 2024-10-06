@@ -1,6 +1,12 @@
 @use '../abstracts/variables' as var;
 @use '../abstracts/mixins' as mixin;
 
+.d-flex{
+  display: flex;
+}
+.align-center{
+  align-items: center;
+}
 .wrap{
   background-color:var.$color-gray;
   height:calc(100vh - 12rem); 
@@ -47,6 +53,28 @@
   bottom: 0;
   left: 0;
 }
+.descrition{
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: #f8f8f8;
+  padding: 2rem;
+  & h3{
+    @include mixin.flex(true,start,center,.5rem);
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  & > span{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    @include mixin.flex(true,start,center,.5rem);
+    & span{
+      & i{
+        font-weight: 600;
+        color: var.$color-primary;
+      }
+    }
+  }
+}
 footer{
   background-color:var.$color-white;
   & .footer {
@@ -69,7 +97,6 @@ footer{
   position: relative;
   background-color:var.$color-white;
   width: 90%;
-  height: 20rem;
   border-radius: 2rem;
   position: absolute;
   top: 50%;
@@ -78,7 +105,7 @@ footer{
   overflow: hidden;
   & .modal_content{
     text-align: center;
-    padding:4rem 2rem 0rem 2rem;
+    padding:4rem 2rem 4rem 2rem;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 24px;
@@ -88,8 +115,6 @@ footer{
   }
   & .modal_btn {
     display: flex;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     & button {
       flex: 1;

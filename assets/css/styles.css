@@ -348,7 +348,7 @@ a {
   display: block;
   width: calc(100% - 1.8rem);
   padding: 1rem 0.9rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
   color: #2B2B2B;
@@ -369,6 +369,36 @@ a {
   border: 1px solid #2B2B2B;
 }
 .form-input:disabled {
+  border: 1px solid #D5DAE0;
+}
+.form-select {
+  display: block;
+  width: calc(100% - 1.8rem);
+  padding: 1rem 0.9rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2B2B2B;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #D5DAE0;
+  border-radius: 4px;
+  outline: 0;
+  background-image: url(../images/select_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.form-select::placeholder {
+  color: #9DA5AB;
+  font-size: 1.6rem;
+}
+.form-select:focus {
+  border: 1px solid #2B2B2B;
+}
+.form-select:disabled {
   border: 1px solid #D5DAE0;
 }
 .participation_form {
@@ -472,6 +502,14 @@ a {
   transform: rotate(45deg);
 }
 
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
 .wrap {
   background-color: #f8f8f8;
   height: calc(100vh - 12rem);
@@ -526,6 +564,35 @@ a {
   left: 0;
 }
 
+.descrition {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+.descrition h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.descrition > span {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.descrition > span span i {
+  font-weight: 600;
+  color: #7D0005;
+}
+
 footer {
   background-color: #fff;
 }
@@ -549,7 +616,6 @@ footer .footer {
   position: relative;
   background-color: #fff;
   width: 90%;
-  height: 20rem;
   border-radius: 2rem;
   position: absolute;
   top: 50%;
@@ -559,7 +625,7 @@ footer .footer {
 }
 .modal .modal_content {
   text-align: center;
-  padding: 4rem 2rem 0rem 2rem;
+  padding: 4rem 2rem 4rem 2rem;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 24px;
@@ -569,8 +635,6 @@ footer .footer {
 }
 .modal .modal_btn {
   display: flex;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 .modal .modal_btn button {
@@ -956,6 +1020,22 @@ footer .footer {
 }
 .text_form + .text_form {
   margin-top: 2rem;
+}
+
+.user_form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.user_form span {
+  font-size: 1.6rem;
+  padding-left: 0.2rem;
+}
+.user_form span.price {
+  color: #7D0005;
+  width: 30%;
+  text-align: right;
 }
 
 /*

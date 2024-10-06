@@ -97,3 +97,19 @@
     margin-top: 2rem;
   }
 }
+
+.user_form{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  & span{
+    font-size: 1.6rem;
+    padding-left: .2rem;
+    &.price{
+      color: var.$color-primary;
+      width: 30%;
+      text-align: right;
+    }
+  }
+}
