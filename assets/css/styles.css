@@ -675,7 +675,7 @@ footer .footer {
     gap: 0;
   }
   .container {
-    width: 390px;
+    width: 100%;
   }
 }
 @media (max-width: 1199px) {

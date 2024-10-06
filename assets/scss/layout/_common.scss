@@ -153,7 +153,7 @@ footer{
     @include mixin.flex(false,start,center);
   }
   .container{
-    width: 390px;
+    width: 100%;
   }
 }
 
