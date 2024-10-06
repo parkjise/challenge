@@ -57,6 +57,16 @@
   }
 }
 
+.terms_area{
+  width: 100%;
+  background-color:var.$color-white;
+  overflow-y: auto;
+  height: 100px;
+  padding: 2rem;
+  font-size: 1.4rem;
+  line-height:24px;
+}
+
 @include mixin.mobile {
   .form-input {
     font-size: 1.4rem;

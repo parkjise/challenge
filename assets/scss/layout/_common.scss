@@ -97,6 +97,31 @@ footer{
   }
 }
 
+.agree_detail{
+  background-color: var.$color-white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-radius: 2rem 2rem 0 0;
+  overflow: hidden;
+  & h3{
+    font-size: 1.8rem;
+    padding: 5rem 2rem 0rem 2rem;
+  }
+  & .detail_content{
+    height: 300px;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid #E4E4E4;
+    overflow: hidden;
+    & .terms_area{
+      height: 100%;
+      width: calc(100% - 4rem);
+    }
+  }
+}
+
+
 @media (min-width:1200px){
   .wrap{   
     height: 100vh;

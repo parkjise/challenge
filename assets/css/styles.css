@@ -400,6 +400,16 @@ a {
   margin-top: 4rem;
 }
 
+.terms_area {
+  width: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+  height: 100px;
+  padding: 2rem;
+  font-size: 1.4rem;
+  line-height: 24px;
+}
+
 @media (max-width: 1000px) {
   .form-input {
     font-size: 1.4rem;
@@ -408,6 +418,60 @@ a {
     font-size: 1.4rem;
   }
 }
+.form_group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form_group label {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.form_group label span {
+  margin-left: 1rem;
+}
+.form_group label span em {
+  color: #7D0005;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.form_group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #CFCFCF;
+  padding: 12px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.form_group input:checked + label:before {
+  background-color: #7D0005;
+}
+
+.form_group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 11px;
+  width: 4px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
 .wrap {
   background-color: #f8f8f8;
   height: calc(100vh - 12rem);
@@ -511,6 +575,30 @@ footer .footer {
 }
 .modal .modal_btn button {
   flex: 1;
+}
+
+.agree_detail {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-radius: 2rem 2rem 0 0;
+  overflow: hidden;
+}
+.agree_detail h3 {
+  font-size: 1.8rem;
+  padding: 5rem 2rem 0rem 2rem;
+}
+.agree_detail .detail_content {
+  height: 300px;
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid #E4E4E4;
+  overflow: hidden;
+}
+.agree_detail .detail_content .terms_area {
+  height: 100%;
+  width: calc(100% - 4rem);
 }
 
 @media (min-width: 1200px) {
@@ -774,6 +862,18 @@ footer .footer {
   text-align: center;
 }
 
+.welcome_text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 6rem 0;
+  text-align: center;
+  line-height: 36px;
+  font-size: 2.4rem;
+}
+.welcome_text span {
+  font-size: 3rem;
+}
+
 .select_form_wrap {
   display: flex;
   flex-direction: column;
@@ -820,6 +920,42 @@ footer .footer {
 .select_box .select_phone {
   width: 40%;
   text-align: right;
+}
+
+.text_form {
+  border-radius: 1rem;
+  border: 1px solid #E4E4E4;
+}
+.text_form_title {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #E4E4E4;
+  font-weight: 600;
+}
+.text_form_content {
+  padding: 1.5rem 2rem;
+}
+.text_form_content .terms_area {
+  width: calc(100% - 4rem);
+}
+.text_form_content h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.text_form_content .description {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.text_form_content .description dt {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.text_form_content .description dd {
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+}
+.text_form + .text_form {
+  margin-top: 2rem;
 }
 
 /*
