@@ -389,7 +389,7 @@ a {
   outline: 0;
   background-image: url(../images/select_arrow.svg);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 0.5rem center;
 }
 .form-select::placeholder {
   color: #9DA5AB;

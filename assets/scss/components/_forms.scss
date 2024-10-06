@@ -49,7 +49,7 @@
   outline: 0;
   background-image: url(../images/select_arrow.svg);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right .5rem center;
   &::placeholder {
     color: var.$color-text-gray;
     font-size: 1.6rem;
