@@ -52,6 +52,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  @include mixin.flex(true,start,start)
 }
 .descrition{
   margin-top: 2rem;
@@ -146,10 +147,50 @@ footer{
   }
 }
 
+.guide_text{
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.6;
+}
+.complete_icon{
+  margin-top: 2rem;
+  color: var.$color-primary;
+  text-align: center;
+  & i{
+    font-size: 12rem;
+  }
+}
 
+.slogan_text{
+  margin: 5rem 0;
+  font-size: 2.6rem;
+  text-align: center;
+  color: #9DA5AB;
+  line-height: 1.2;
+  & em{
+    font-family: 'Poppins';
+    font-size: 3.2rem;
+  }
+  & b{
+    color: var.$color-text-primary;
+  }
+}
+
+.serach_form{
+  position: relative;
+  margin: 5rem 0;
+  & .serach_form_btn{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    & i{
+      font-size: 2.5rem;
+    }
+  }
+}
 @media (min-width:1200px){
   .wrap{   
-    height: 100vh;
     @include mixin.flex(false,start,center);
   }
   .container{
