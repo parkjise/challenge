@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+
+.request_box{
+  border-radius: 1rem;
+  border: 1px solid #E4E4E4;
+  & h3{
+    border-bottom: 1px solid #E4E4E4;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+  }
+  & + .request_box{
+    margin-top: 2rem;
+  }
+}
+
+.request_con{
+  padding:2rem;
+  &:last-child{
+    padding-top: 0rem;
+  }
+  & .request_con_01{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #9DA5AB;
+    width: 80px;
+    display: inline-block;
+  }
+  & .request_con_02{
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}
+.request_list_wrap{
+  padding:2rem;
+  & .request_list{
+    & + .request_list{
+      margin-top: 2rem;
+    }
+    @include mixin.flex(true,space-between,center);
+    & span{
+      font-size:1.4rem;
+      font-weight: 600;
+    }
+  }
+}

@@ -19,48 +19,6 @@
     font-size: 3rem;
   }
 }
-.select_form_wrap{
-  @include mixin.flex(false,start,start,1rem);
-}
-.select_box{
-  width: calc(100% - 2rem);
-  @include mixin.flex(true,space-between,center);
-  padding: 2rem 1rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-  border-radius: 1rem;
-  border: 1px solid #E4E4E4;
-  & .select_check{
-    width: 50px;
-    text-align: left;
-    & i{
-      font-size: 2.4rem;
-      color:#CFCFCF;
-    }
-    &.active{
-      & i{
-        color: var.$color-primary;
-      }
-    }
-    &.disabled{
-      & i{
-        color:#D5D5D5;
-      }
-    }
-  }
-  & .select_num{
-    width: 20%;
-    text-align: left;
-  }
-  & .select_name{
-    flex: 1;
-    text-align: left;
-  }
-  & .select_phone{
-    width: 40%;
-    text-align: right;
-  }
-}
 
 .text_form{
   border-radius: 1rem;

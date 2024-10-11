@@ -10,12 +10,14 @@
 @use "components/button";
 @use "components/forms";
 @use "components/checkbox";
+@use "components/badge";
 // layout
 @use "layout/common";
 @use "layout/header";
 // pages
 @use  'pages/main';
 @use  'pages/participation';
+@use  'pages/request';
 // plugins
 @use "plugins/icons/remixicon";
 
